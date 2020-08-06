@@ -1,0 +1,25 @@
+{
+  "name": "netlify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf dist && parcel client/index.html",
+    "build": "rimraf dist && netlify-lambda install && parcel build client/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@okta/okta-signin-widget": "^4.3.0",
+    "axios": "^0.19.2",
+    "netlify-cli": "^2.59.0",
+    "netlify-lambda": "^2.0.1",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-reverentgeek": "^3.0.0",
+    "rimraf": "^3.0.2"
+  }
+}
